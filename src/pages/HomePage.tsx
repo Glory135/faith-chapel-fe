@@ -1,8 +1,9 @@
-import PageWrapper from '../components/PageWrapper';
+import PageWrapper from '../components/wrappers/PageWrapper';
 import AboutSection from '../components/sections/About-section';
 import HomeHeroSection from '../components/sections/Home-hero-section';
 import PastorMessageSection from '../components/sections/Pastor-message-section';
 import WeeklyServicesSection from '../components/sections/Weekly-services-section';
+import MissionStatementSection from '../components/sections/Mission-statement-section';
 
 export default function HomePage() {
 	return (
@@ -10,6 +11,7 @@ export default function HomePage() {
 			<HomeHeroSection />
 			<AboutSection />
 			<WeeklyServicesSection />
+			<MissionStatementSection />
 			<PastorMessageSection />
 		</PageWrapper>
 	);

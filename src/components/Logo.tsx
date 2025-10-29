@@ -1,5 +1,3 @@
-import whiteLogo from '../assets/logo/logo-white.png';
-import blackLogo from '../assets/logo/logo-black.png';
 import { Link } from 'react-router';
 import { cn } from '../lib/utils';
 

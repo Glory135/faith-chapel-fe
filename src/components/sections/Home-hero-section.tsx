@@ -1,4 +1,4 @@
-import HeroWrapper from '../HeroWrapper';
+import HeroWrapper from '../wrappers/HeroWrapper';
 import img from '../../assets/images/worship-img7.jpg';
 import { Button } from '../ui/button';
 import AnimateOnRender from '../animation/AnimateOnRender';

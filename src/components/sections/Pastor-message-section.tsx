@@ -1,6 +1,6 @@
 import AnimateOnView from '../animation/AnimateInView';
 import pastorImg from '../../assets/images/pastor.jpeg';
-import SectionWrapper from '../SectionWrapper';
+import SectionWrapper from '../wrappers/SectionWrapper';
 
 const PastorMessageSection = () => {
 	return (

@@ -1,4 +1,4 @@
-import SectionWrapper from '../SectionWrapper';
+import SectionWrapper from '../wrappers/SectionWrapper';
 import AnimateOnView from '../animation/AnimateInView';
 import img from '../../assets/images/leadership.jpg';
 import { Button } from '../ui/button';
@@ -46,10 +46,10 @@ const AboutSection = () => {
 					initial={{ opacity: 0, x: 50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6 }}>
-					<p className='font-semibold italic'>
+					<h4 className='font-semibold italic!'>
 						The name of the Lord is a strong tower; the righteous
 						run into it and are safe.
-					</p>
+					</h4>
 				</AnimateOnView>
 				<AnimateOnView
 					initial={{ opacity: 0, x: 50 }}
@@ -66,7 +66,11 @@ const AboutSection = () => {
 						<span className='font-semibold'>Pastor Knox</span>
 					</p>
 				</AnimateOnView>
-                <Button className='w-fit' size={"lg"} >Learn More </Button>
+				<Button
+					className='rounded-full min-w-[200px] sm:w-fit py-6'
+					size={'lg'}>
+					Learn More{' '}
+				</Button>
 			</div>
 		</SectionWrapper>
 	);

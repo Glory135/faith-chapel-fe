@@ -1,6 +1,6 @@
 import { Clock } from 'lucide-react';
 import AnimateOnView from '../animation/AnimateInView';
-import SectionWrapper from '../SectionWrapper';
+import SectionWrapper from '../wrappers/SectionWrapper';
 import {
 	Card,
 	CardContent,
@@ -8,8 +8,8 @@ import {
 	CardHeader,
 	CardTitle,
 } from '../ui/card';
-import { CgCross } from "react-icons/cg";
-
+import { CgCross } from 'react-icons/cg';
+import { Button } from '../ui/button';
 
 const serviceData = [
 	{
@@ -56,7 +56,10 @@ const WeeklyServicesSection = () => {
 						}}>
 						<Card className='w-full min-h-[150px]'>
 							<CardHeader>
-								<CardTitle className='relative'><CgCross className='absolute -top-3 right-0' /> {service.title}</CardTitle>
+								<CardTitle className='relative'>
+									<CgCross className='absolute -top-3 right-0' />{' '}
+									{service.title}
+								</CardTitle>
 								<CardDescription>
 									{service.description}
 								</CardDescription>
@@ -76,6 +79,11 @@ const WeeklyServicesSection = () => {
 					</AnimateOnView>
 				))}
 			</div>
+			<Button
+				size={'lg'}
+				className='rounded-full min-w-[250px] sm:w-fit py-6 text-lg'>
+				View All Events{' '}
+			</Button>
 		</SectionWrapper>
 	);
 };

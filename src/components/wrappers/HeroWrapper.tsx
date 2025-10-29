@@ -1,5 +1,5 @@
 import type React from 'react';
-import AnimateOnRender from './animation/AnimateOnRender';
+import AnimateOnRender from '../animation/AnimateOnRender';
 
 const HeroWrapper = ({
 	children,
