@@ -27,7 +27,7 @@ const MissionStatementSection = () => {
 					{/* </AnimateOnView> */}
 
 					<div className='w-[30%] min-w-[250px] min-h-32 md:aspect-square invisible' />
-					<div className='flex-1 min-w-sm  text-start flex flex-col gap-3 my-10'>
+					<div className='flex-1 sm:min-w-sm  text-start flex flex-col gap-3 my-10'>
 						<AnimateOnView
 							initial={{ opacity: 0, x: 50 }}
 							animate={{ opacity: 1, x: 0 }}

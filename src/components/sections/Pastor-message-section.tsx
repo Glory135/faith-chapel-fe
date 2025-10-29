@@ -5,7 +5,7 @@ import SectionWrapper from '../wrappers/SectionWrapper';
 const PastorMessageSection = () => {
 	return (
 		<SectionWrapper className='flex-wrap gap-5'>
-			<div className='flex-1 min-w-sm md:max-w-lg text-start flex flex-col gap-3'>
+			<div className='flex-1 min-w-xs sm:min-w-sm md:max-w-lg text-start flex flex-col gap-3'>
 				<AnimateOnView
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const PastorMessageSection = () => {
 				initial={{ opacity: 0, x: 50 }}
 				animate={{ opacity: 1, x: 0 }}
 				transition={{ duration: 0.2 }}
-				className='flex-1 min-w-sm md:max-w-lg text-start flex flex-col gap-3'>
+				className='flex-1 min-w-xs sm:min-w-sm md:max-w-lg text-start flex flex-col gap-3'>
 				<img
 					alt='pastor'
 					src={pastorImg}

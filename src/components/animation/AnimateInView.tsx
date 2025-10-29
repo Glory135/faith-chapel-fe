@@ -47,7 +47,8 @@ export default function AnimateOnView({
 			animate={shouldAnimate ? animate : initial}
 			transition={transition}
 			className={className}
-			{...rest}>
+			{...rest}
+			>
 			{children}
 		</motion.div>
 	);
