@@ -9,22 +9,13 @@ const MissionStatementSection = () => {
 			styles={{
 				backgroundImage: `linear-gradient(to right, rgba(99, 0, 49, 0.912), rgba(0, 0, 0, 0.89)), url(${backgroundImg})`,
 			}}
-			className='backgroundImg-section my-[20vh] px-5 py-0 text-white'>
+			className='backgroundImg-section mt-[20vh] px-5 py-0 text-white'>
 			<AnimateOnView>
 				<div className='flex flex-wrap  items-center w-full min-h-[50vh]  max-w-7xl relative gap-10'>
-					{/* <AnimateOnView
-					initial={{ opacity: 0, y: 50, scale: 0.95 }}
-					whileInView={{ opacity: 1, y: 0, scale: 1 }}
-					viewport={{ once: false, amount: 0.3 }}
-					transition={{
-						duration: 0.8,
-						ease: [0.25, 0.1, 0.25, 1], // smooth ease
-					}}> */}
 					<img
 						src={img}
 						className='w-[30%] min-w-[250px] absolute -top-20 aspect-square object-cover object-center'
 					/>
-					{/* </AnimateOnView> */}
 
 					<div className='w-[30%] min-w-[250px] min-h-32 md:aspect-square invisible' />
 					<div className='flex-1 sm:min-w-sm  text-start flex flex-col gap-3 my-10'>

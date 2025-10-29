@@ -33,6 +33,27 @@ const serviceData = [
 		day: 'Every Tuesday and Thursday ',
 		time: '7:00 PM - 8:30 PM',
 	},
+	{
+		title: 'Sunday Service',
+		description:
+			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
+		day: 'Every Sunday',
+		time: '10:00 AM - 12:00 PM',
+	},
+	{
+		title: 'Sunday School',
+		description:
+			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
+		day: 'Every Sunday',
+		time: '7:00 AM - 9:00 AM',
+	},
+	{
+		title: 'Bible Study',
+		description:
+			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
+		day: 'Every Tuesday and Thursday ',
+		time: '7:00 PM - 8:30 PM',
+	},
 ];
 
 const WeeklyServicesSection = () => {

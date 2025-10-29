@@ -10,7 +10,7 @@ function Logo({ color }: { color: 'white' | 'black' }) {
 					'font-bold text-xl text-white text-nowrap',
 					color === 'white' ? 'text-white' : 'text-black'
 				)}>
-				FAITH CHAPEL A.M.E
+				FAITH CHAPEL
 			</h3>
 		</Link>
 	);

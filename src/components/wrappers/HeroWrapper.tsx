@@ -1,5 +1,6 @@
 import type React from 'react';
 import AnimateOnRender from '../animation/AnimateOnRender';
+import { cn } from '../../lib/utils';
 
 const HeroWrapper = ({
 	children,
@@ -7,12 +8,14 @@ const HeroWrapper = ({
 	backgroundImg,
 	title,
 	subtitle,
+	className,
 }: {
 	children: React.ReactNode;
 	id: string;
 	backgroundImg: string;
 	title: string;
 	subtitle?: string;
+	className?: string;
 }) => {
 	return (
 		<section
@@ -20,8 +23,11 @@ const HeroWrapper = ({
 				backgroundImage: `linear-gradient(to right, rgba(99, 0, 49, 0.541), rgba(0, 0, 0, 0.571)), url(${backgroundImg})`,
 			}}
 			id={id}
-			className='hero-section w-full h-auto md:h-screen flex items-center justify-center p-5'>
-			<div className='flex flex-col gap-5 lg:text-center lg:items-center text-white my-[20vh] md:m-0'>
+			className={cn(
+				'hero-section w-full h-auto md:py-[30vh] flex items-center justify-center px-5 lg:text-center',
+				className
+			)}>
+			<div className='flex flex-col gap-5 lg:items-center text-white my-[20vh] md:m-0'>
 				<AnimateOnRender>
 					{' '}
 					<h1 className='font-bold text-5xl lg:text-7xl text-wrap'>
@@ -36,7 +42,7 @@ const HeroWrapper = ({
 							ease: 'easeOut',
 							delay: 0.5,
 						}}>
-						<p className='text-2xl'>{subtitle}</p>
+						<p className='text-2xl max-w-2xl'>{subtitle}</p>
 					</AnimateOnRender>
 				)}
 				{children}
