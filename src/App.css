@@ -1,0 +1,29 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.title {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 30%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+}
