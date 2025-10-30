@@ -1,9 +1,11 @@
+import MinistriesHeroSection from '../components/sections/Ministries-hero-section';
 import PageWrapper from '../components/wrappers/PageWrapper';
 
 export default function MinistriesPage() {
 	return (
 		<PageWrapper>
-			<div className=''>Ministries</div>
+			<MinistriesHeroSection />
+			<div className="h-screen"></div>
 		</PageWrapper>
 	);
 }

@@ -44,11 +44,11 @@ export default function AnimateOnView({
 		<motion.div
 			ref={ref}
 			initial={initial}
+			exit={initial as MotionProps['exit']}
 			animate={shouldAnimate ? animate : initial}
 			transition={transition}
 			className={className}
-			{...rest}
-			>
+			{...rest}>
 			{children}
 		</motion.div>
 	);

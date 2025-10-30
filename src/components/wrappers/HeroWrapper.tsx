@@ -42,7 +42,7 @@ const HeroWrapper = ({
 							ease: 'easeOut',
 							delay: 0.5,
 						}}>
-						<p className='text-2xl max-w-2xl'>{subtitle}</p>
+						<p className='text-2xl max-w-4xl'>{subtitle}</p>
 					</AnimateOnRender>
 				)}
 				{children}

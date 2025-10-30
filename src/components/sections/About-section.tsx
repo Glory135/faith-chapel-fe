@@ -2,10 +2,21 @@ import SectionWrapper from '../wrappers/SectionWrapper';
 import AnimateOnView from '../animation/AnimateInView';
 import img from '../../assets/images/leadership.jpg';
 import { Button } from '../ui/button';
+import { cn } from '../../lib/utils';
 
-const AboutSection = () => {
+const AboutSection = ({
+	withAction = true,
+	className,
+}: {
+	withAction?: boolean;
+	className?: string;
+}) => {
 	return (
-		<SectionWrapper className='gap-10 flex-wrap py-10 overflow-hidden'>
+		<SectionWrapper
+			className={cn(
+				'gap-10 flex-col-reverse sm:flex-row flex-wrap pt-10 overflow-x-hidden',
+				className
+			)}>
 			<div className='relative  h-full flex-1 min-w-xs sm:min-w-sm md:max-w-lg '>
 				<div className='absolute -top-10 -left-[50px] -z-10 w-[25%] aspect-square rounded-lg bg-primary/50'></div>
 				<div className='absolute -bottom-[70px] -right-[30px] -z-10 w-[50%] aspect-square rounded-lg bg-primary/20'></div>
@@ -66,11 +77,13 @@ const AboutSection = () => {
 						<span className='font-semibold'>Pastor Knox</span>
 					</p>
 				</AnimateOnView>
-				<Button
-					className='rounded-full min-w-[200px] sm:w-fit py-6'
-					size={'lg'}>
-					Learn More{' '}
-				</Button>
+				{withAction && (
+					<Button
+						className='rounded-full min-w-[200px] sm:w-fit py-6'
+						size={'lg'}>
+						Learn More{' '}
+					</Button>
+				)}
 			</div>
 		</SectionWrapper>
 	);
