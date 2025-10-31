@@ -1,8 +1,6 @@
 import { Calendar, MapPin } from 'lucide-react';
 import { eventsData } from '../../data/eventsData';
 import AnimateOnView from '../animation/AnimateInView';
-import { cn } from '../../lib/utils';
-import { buttonVariants } from '../ui/button';
 
 const EventsTimelineSection = () => {
 	return (
