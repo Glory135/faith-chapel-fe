@@ -1,10 +1,13 @@
 import AnimateOnView from '../animation/AnimateInView';
 import pastorImg from '../../assets/images/Pastor.png';
 import SectionWrapper from '../wrappers/SectionWrapper';
+import { sectionIds } from '../../data/sectionIds';
 
 const PastorMessageSection = () => {
 	return (
-		<SectionWrapper className='flex-wrap gap-10'>
+		<SectionWrapper
+			className='flex-wrap gap-10'
+			id={sectionIds.messageFromPastorSection}>
 			<div className='flex-1 min-w-xs sm:min-w-sm md:max-w-lg text-start flex flex-col gap-3'>
 				<AnimateOnView
 					initial={{ opacity: 0, x: -50 }}

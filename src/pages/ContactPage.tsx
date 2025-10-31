@@ -4,12 +4,13 @@ import AnimateOnRender from '../components/animation/AnimateOnRender';
 import LocationSection from '../components/sections/Location-section';
 import WeeklyServicesSection from '../components/sections/Weekly-services-section';
 import { contactDetails } from '../data/contactData';
+import { sectionIds } from '../data/sectionIds';
 
 export function ContactPage() {
 	return (
 		<PageWrapper>
 			{/* Hero Header */}
-			<div className='bg-primary py-20 px-6'>
+			<div id={sectionIds.contactHero} className='bg-primary py-20 px-6'>
 				<AnimateOnRender className='max-w-6xl mx-auto text-center'>
 					<h1 className='text-white mb-4'>Contact Us</h1>
 					<div className='w-24 h-1 bg-white mx-auto mb-6'></div>

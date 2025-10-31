@@ -8,37 +8,41 @@ export const navItemsData:
             label: 'Home',
         },
         {
-            link: `/#${sectionIds.jesus}`,
+            link: `/#${sectionIds.aboutUsSection}`,
             label: 'About Us',
         },
         {
-            link: `/#${sectionIds.values}`,
+            link: `/#${sectionIds.weeklyServicesSection}`,
             label: 'Services',
         },
         {
-            link: `/#${sectionIds.acg}`,
-            label: 'Message',
+            link: `/#${sectionIds.messageFromPastorSection}`,
+            label: 'Message From Pastor',
         },
     ],
     About: [
         {
             link: `/about#${sectionIds.aboutHero}`,
+            label: 'About',
+        },
+        {
+            link: `/about#${sectionIds.historySection}`,
             label: 'Church History',
         },
         {
-            link: `/about#${sectionIds.story}`,
-            label: 'Values',
+            link: `/about#${sectionIds.valuesSection}`,
+            label: 'Our Values',
         },
         {
-            link: `/about#${sectionIds.values}`,
-            label: 'Our Pastor',
+            link: `/about#${sectionIds.meetPastorSection}`,
+            label: 'Meet Our Pastor',
         },
         {
-            link: `/about#${sectionIds.values}`,
+            link: `/about#${sectionIds.pastoralHistory}`,
             label: 'Leadership',
         },
     ],
-    Ministries: "/ministries",
-    Events: "/events",
-    "Contact Us": "/contact",
+    Ministries: `/ministries#${sectionIds.ministriesHero}`,
+    Events: `/events#${sectionIds.eventsHero}`,
+    "Contact Us": `/contact#${sectionIds.contactHero}`,
 };

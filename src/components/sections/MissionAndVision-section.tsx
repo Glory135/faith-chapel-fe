@@ -3,10 +3,12 @@ import backgroundImg from '../../assets/images/img2.jpg';
 import img from '../../assets/images/together-img.avif';
 import AnimateOnView from '../animation/AnimateInView';
 import { CgCross } from 'react-icons/cg';
+import { sectionIds } from '../../data/sectionIds';
 
 const MissionAndVisionStatementSection = () => {
 	return (
 		<SectionWrapper
+			id={sectionIds.valuesSection}
 			styles={{
 				backgroundImage: `linear-gradient(to right, rgba(99, 0, 49, 0.912), rgba(0, 0, 0, 0.89)), url(${backgroundImg})`,
 			}}
@@ -32,7 +34,7 @@ const MissionAndVisionStatementSection = () => {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.4 }}>
 							<h3 className='font-semibold text-lg uppercase relative w-fit'>
-                                <CgCross className='absolute top-0 -right-5' />
+								<CgCross className='absolute top-0 -right-5' />
 								Our Mission
 							</h3>
 							<p>
@@ -47,7 +49,7 @@ const MissionAndVisionStatementSection = () => {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.4 }}>
 							<h3 className='font-semibold text-lg uppercase relative w-fit'>
-                                <CgCross className='absolute top-0 -right-5' />
+								<CgCross className='absolute top-0 -right-5' />
 								Our Vision
 							</h3>
 							<p>
@@ -62,7 +64,7 @@ const MissionAndVisionStatementSection = () => {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.4 }}>
 							<h3 className='font-semibold text-lg uppercase relative w-fit'>
-                                <CgCross className='absolute top-0 -right-5' />
+								<CgCross className='absolute top-0 -right-5' />
 								Value Statement
 							</h3>
 							<p>

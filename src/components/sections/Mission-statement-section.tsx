@@ -2,10 +2,12 @@ import SectionWrapper from '../wrappers/SectionWrapper';
 import backgroundImg from '../../assets/images/img1.jpg';
 import img from '../../assets/images/cross.jpg';
 import AnimateOnView from '../animation/AnimateInView';
+import { sectionIds } from '../../data/sectionIds';
 
 const MissionStatementSection = () => {
 	return (
 		<SectionWrapper
+		id={sectionIds.missionSection}
 			styles={{
 				backgroundImage: `linear-gradient(to right, rgba(99, 0, 49, 0.912), rgba(0, 0, 0, 0.89)), url(${backgroundImg})`,
 			}}

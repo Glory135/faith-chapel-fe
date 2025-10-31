@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { Button } from './ui/button';
 import { BiDonateHeart } from 'react-icons/bi';
 import { contactDetails, socialMediaDetails } from '../data/contactData';
+import { sectionIds } from '../data/sectionIds';
 
 const FooterSection = () => {
 	return (
@@ -53,16 +54,25 @@ const FooterSection = () => {
 					<nav>
 						<ul className='flex flex-col gap-5 text-start'>
 							<li className=''>
-								<Link to={'/home'}>Home</Link>
+								<Link to={`/#${sectionIds.homeHero}`}>
+									Home
+								</Link>
 							</li>
 							<li className=''>
-								<Link to={'/about'}>About Us</Link>
+								<Link to={`/about#${sectionIds.aboutHero}`}>
+									About Us
+								</Link>
 							</li>
 							<li className=''>
-								<Link to={'/events'}>Events</Link>
+								<Link to={`/events#${sectionIds.eventsHero}`}>
+									Events
+								</Link>
 							</li>
 							<li className=''>
-								<Link to={'/ministres'}>Ministries</Link>
+								<Link
+									to={`/ministries#${sectionIds.ministriesHero}`}>
+									Ministries
+								</Link>
 							</li>
 						</ul>
 					</nav>

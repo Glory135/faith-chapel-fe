@@ -2,6 +2,7 @@ import HeroWrapper from '../wrappers/HeroWrapper';
 import img from '../../assets/images/all-together.png';
 import { Button } from '../ui/button';
 import AnimateOnRender from '../animation/AnimateOnRender';
+import { sectionIds } from '../../data/sectionIds';
 
 const HomeHeroSection = () => {
 	return (
@@ -9,7 +10,7 @@ const HomeHeroSection = () => {
 			backgroundImg={img}
 			title='Welcome To Faith Chapel A.M.E Church'
 			subtitle='A place of worship, community, and spiritual growth.'
-			id='home-hero'>
+			id={sectionIds.homeHero}>
 			<AnimateOnRender
 				transition={{ delay: 1 }}
 				className='flex flex-wrap justify-center items-center gap-3'>

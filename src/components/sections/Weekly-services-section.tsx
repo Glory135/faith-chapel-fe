@@ -11,6 +11,7 @@ import {
 import { CgCross } from 'react-icons/cg';
 import { Button } from '../ui/button';
 import { serviceData } from '../../data/eventsData';
+import { sectionIds } from '../../data/sectionIds';
 
 
 
@@ -20,7 +21,7 @@ const WeeklyServicesSection = ({
 	withAction?: boolean;
 }) => {
 	return (
-		<SectionWrapper className='bg-primary/5 flex-col gap-10'>
+		<SectionWrapper id={sectionIds.weeklyServicesSection} className='bg-primary/5 flex-col gap-10'>
 			<AnimateOnView className='text-center'>
 				<h1 className='mb-5'>Join Us for Worship</h1>
 				<p className='max-w-xl'>

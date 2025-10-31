@@ -12,9 +12,9 @@ export default function AboutPage() {
 			<AboutHeroSection />
 			<HistorySection />
 			<MissionAndVisionStatementSection />
+			<MeetPastorSection />
 			<PastorsHistory />
 			<BishopsVisited />
-			<MeetPastorSection />
 		</PageWrapper>
 	);
 }

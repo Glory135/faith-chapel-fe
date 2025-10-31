@@ -3,6 +3,7 @@ import AnimateOnView from '../animation/AnimateInView';
 import img from '../../assets/images/leadership.jpg';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
+import { sectionIds } from '../../data/sectionIds';
 
 const AboutSection = ({
 	withAction = true,
@@ -16,7 +17,9 @@ const AboutSection = ({
 			className={cn(
 				'gap-10 flex-col-reverse sm:flex-row flex-wrap pt-10 overflow-x-hidden',
 				className
-			)}>
+			)}
+			id={sectionIds.aboutUsSection}
+			>
 			<div className='relative  h-full flex-1 min-w-xs sm:min-w-sm md:max-w-lg '>
 				<div className='absolute -top-10 -left-[50px] -z-10 w-[25%] aspect-square rounded-lg bg-primary/50'></div>
 				<div className='absolute -bottom-[70px] -right-[30px] -z-10 w-[50%] aspect-square rounded-lg bg-primary/20'></div>

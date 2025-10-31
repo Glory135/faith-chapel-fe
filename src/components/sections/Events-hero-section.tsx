@@ -1,5 +1,6 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
 import img from '../../assets/images/img4.png';
+import { sectionIds } from '../../data/sectionIds';
 
 const EventsHeroSection = () => {
 	return (
@@ -7,7 +8,7 @@ const EventsHeroSection = () => {
 			backgroundImg={img}
 			title='Upcoming Events'
 			subtitle='Join us in fellowship and worship throughout the year. All are welcome to participate in these special events and celebrations.'
-			id='about-hero'
+			id={sectionIds.eventsHero}
 			className='md:py-32! min-h-0 h-auto'>
 			<div className=''></div>
 		</HeroWrapper>

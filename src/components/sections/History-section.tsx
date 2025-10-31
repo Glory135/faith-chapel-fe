@@ -1,10 +1,13 @@
 import SectionWrapper from '../wrappers/SectionWrapper';
 import AnimateOnView from '../animation/AnimateInView';
 import founderImg from '../../assets/images/founder.png';
+import { sectionIds } from '../../data/sectionIds';
 
 const HistorySection = () => {
 	return (
-		<SectionWrapper className='gap-20 flex-col-reverse sm:flex-row-reverse flex-wrap pt-10 overflow-x-hidden'>
+		<SectionWrapper
+			id={sectionIds.historySection}
+			className='gap-20 flex-col-reverse sm:flex-row-reverse flex-wrap pt-10 overflow-x-hidden'>
 			<div className='relative  h-full flex-1 min-w-xs sm:min-w-sm md:max-w-lg '>
 				<div className='absolute -top-10 -left-[50px] -z-10 w-[25%] aspect-square rounded-lg bg-primary/50'></div>
 				<div className='absolute -bottom-[70px] -right-[30px] -z-10 w-[50%] aspect-square rounded-lg bg-primary/20'></div>
@@ -15,11 +18,13 @@ const HistorySection = () => {
 					className=' text-start w-fit flex flex-col items-center'>
 					<img
 						alt='Rev. Willie B. James Spratt'
-                        title='picture of Rev. Willie B. James Spratt'
+						title='picture of Rev. Willie B. James Spratt'
 						src={founderImg}
 						className='w-full h-auto rounded-md max-w-xs sm:max-w-[300px]'
 					/>
-                    <h3 className='font-semibold text-lg'>Rev. Willie B. James Spratt</h3>
+					<h3 className='font-semibold text-lg'>
+						Rev. Willie B. James Spratt
+					</h3>
 				</AnimateOnView>
 			</div>
 

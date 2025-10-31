@@ -1,17 +1,12 @@
 import { Crown } from 'lucide-react';
 import AnimateOnView from '../animation/AnimateInView';
-
-const bishops: string[] = [
-	'BISHOP VINTON R. ANDERSON',
-	'BISHOP RICHARD ALLEN HILDEBRAND',
-	'BISHOP McKINLEY YOUNG',
-	'BISHOP E. EARL McCLOUD JR',
-	'BISHOP STAFFORD J. N. WICKER',
-];
+import { bishops } from '../../data/pastorsData';
+import SectionWrapper from '../wrappers/SectionWrapper';
+import { sectionIds } from '../../data/sectionIds';
 
 export function BishopsVisited() {
 	return (
-		<div className='bg-[#1A1A1A] py-20 px-6'>
+		<SectionWrapper id={sectionIds.bishopsSection} className='bg-[#1A1A1A] py-20 px-6'>
 			<div className='max-w-5xl mx-auto'>
 				{/* Section Header */}
 				<AnimateOnView className='text-center mb-16'>
@@ -50,6 +45,6 @@ export function BishopsVisited() {
 					))}
 				</div>
 			</div>
-		</div>
+		</SectionWrapper>
 	);
 }
