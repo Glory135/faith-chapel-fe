@@ -86,27 +86,6 @@ const EventsTimelineSection = () => {
 					))}
 				</div>
 			</div>
-
-			{/* Call to Action Footer */}
-			<div className='bg-[#1A1A1A] py-12 px-6'>
-				<div className='max-w-4xl mx-auto text-center'>
-					<h1 className='text-white mb-4'>Stay Connected</h1>
-					<p className='text-gray-300 mb-6'>
-						For more information about any of these events, please
-						contact the church office or speak with one of our
-						ministry leaders.
-					</p>
-					<div className='flex flex-wrap justify-center gap-4'>
-						<a
-							href='tel:+1234567890'
-							className={cn(buttonVariants({
-                                size: "lg"
-                            }), "text-primary-foreground!")}>
-							Contact Us
-						</a>
-					</div>
-				</div>
-			</div>
 		</>
 	);
 };

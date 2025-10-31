@@ -1,14 +1,9 @@
 import Logo from './Logo';
 import SectionWrapper from './wrappers/SectionWrapper';
-import { FaFacebook } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaYoutube } from 'react-icons/fa';
-import { FiPhone } from 'react-icons/fi';
-import { MdOutlineEmail } from 'react-icons/md';
-import { MdOutlineLocationOn } from 'react-icons/md';
 import { Link } from 'react-router';
 import { Button } from './ui/button';
 import { BiDonateHeart } from 'react-icons/bi';
+import { contactDetails, socialMediaDetails } from '../data/contactData';
 
 const FooterSection = () => {
 	return (
@@ -17,48 +12,64 @@ const FooterSection = () => {
 				<div className='flex flex-col gap-2'>
 					<Logo color='white' />
 					<div className='flex gap-2 items-center'>
-						<FaFacebook size={25} />
-						<FaInstagram size={25} />
-						<FaYoutube size={25} />
+						{socialMediaDetails.map((social, index) => (
+							<a href={social.link || '#'} key={index}>
+								{social.icon}
+							</a>
+						))}
 					</div>
 				</div>
-				<div className='flex flex-col gap-2 items-start justify-start min-w-xs'>
+				<div className='flex flex-col gap-5 items-start justify-start'>
+					<h3 className='fnt-semibold text-lg'>Contact Us</h3>
+					{contactDetails.map((contact, index) => (
+						<div
+							key={index}
+							className='flex gap-2 items-start text-start'>
+							{contact.icon}
+							{contact?.link && contact?.details?.length === 1 ? (
+								<a href={contact?.link} className=''>
+									{contact?.details[0]}
+								</a>
+							) : contact?.link &&
+							  contact?.details?.length > 1 ? (
+								<div className='space-y-1 flex-col'>
+									<p className=''>{contact?.details[0]}</p>
+									<a href={contact?.link} className=' '>
+										{contact?.details[1]}
+									</a>
+								</div>
+							) : (
+								contact?.details?.map((detail, idx) => (
+									<p key={idx} className=''>
+										{detail}
+									</p>
+								))
+							)}
+						</div>
+					))}
+				</div>
+				<div className='flex flex-col gap-2 items-start justify-start '>
 					<h3 className='fnt-semibold text-lg'>Quick Links</h3>
 					<nav>
 						<ul className='flex flex-col gap-5 text-start'>
 							<li className=''>
-								<Link to={'/home'}>Hone</Link>
+								<Link to={'/home'}>Home</Link>
 							</li>
 							<li className=''>
-								<Link to={'/home'}>About Us</Link>
+								<Link to={'/about'}>About Us</Link>
 							</li>
 							<li className=''>
-								<Link to={'/home'}>Services</Link>
+								<Link to={'/events'}>Events</Link>
 							</li>
 							<li className=''>
-								<Link to={'/home'}>Message From Pastor</Link>
+								<Link to={'/ministres'}>Ministries</Link>
 							</li>
 						</ul>
 					</nav>
 				</div>
-
-				<div className='flex flex-col gap-2 items-start justify-start'>
-					<h3 className='fnt-semibold text-lg'>Contact Us</h3>
-					<div className='flex gap-2 items-center'>
-						<MdOutlineLocationOn size={25} />{' '}
-						<p>123 Faith Street, City, State 12345</p>
-					</div>
-					<div className='flex gap-2 items-center'>
-						<FiPhone size={25} /> <p>(123) 456-7890</p>
-					</div>
-					<div className='flex gap-2 items-center'>
-						<MdOutlineEmail size={25} />{' '}
-						<p>faithchurch@email.com</p>
-					</div>
-					<Button className='mt-5' variant={'ghost'}>
-						<BiDonateHeart /> MAKE A LOVE OFFERING{' '}
-					</Button>
-				</div>
+				<Button className='mt-5' variant={'ghost'}>
+					<BiDonateHeart /> MAKE A LOVE OFFERING{' '}
+				</Button>
 			</div>
 		</SectionWrapper>
 	);

@@ -33,8 +33,8 @@ const HeroWrapper = ({
 					<h1 className='font-bold text-4xl! sm:text-5xl! lg:text-66xl! text-wrap'>
 						{title}
 					</h1>
+					<div className='w-24 h-1 bg-white mx-auto mt-3'></div>
 				</AnimateOnRender>
-
 				{subtitle && (
 					<AnimateOnRender
 						transition={{

@@ -8,6 +8,7 @@ import FooterSection from './components/Footer';
 import AboutPage from './pages/AboutPage';
 import MinistriesPage from './pages/MinistriesPage';
 import { EventsPage } from './pages/EventsPAge';
+import { ContactPage } from './pages/ContactPage';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 					<Route path='/about' element={<AboutPage />} />
 					<Route path='/ministries' element={<MinistriesPage />} />
 					<Route path='/events' element={<EventsPage />} />
+					<Route path='/contact' element={<ContactPage />} />
 				</Routes>
 				<FooterSection />
 			</BrowserRouter>

@@ -10,53 +10,15 @@ import {
 } from '../ui/card';
 import { CgCross } from 'react-icons/cg';
 import { Button } from '../ui/button';
+import { serviceData } from '../../data/eventsData';
 
-const serviceData = [
-	{
-		title: 'Sunday Service',
-		description:
-			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-		day: 'Every Sunday',
-		time: '10:00 AM - 12:00 PM',
-	},
-	{
-		title: 'Sunday School',
-		description:
-			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-		day: 'Every Sunday',
-		time: '7:00 AM - 9:00 AM',
-	},
-	{
-		title: 'Bible Study',
-		description:
-			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-		day: 'Every Tuesday and Thursday ',
-		time: '7:00 PM - 8:30 PM',
-	},
-	{
-		title: 'Sunday Service',
-		description:
-			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-		day: 'Every Sunday',
-		time: '10:00 AM - 12:00 PM',
-	},
-	{
-		title: 'Sunday School',
-		description:
-			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-		day: 'Every Sunday',
-		time: '7:00 AM - 9:00 AM',
-	},
-	{
-		title: 'Bible Study',
-		description:
-			'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-		day: 'Every Tuesday and Thursday ',
-		time: '7:00 PM - 8:30 PM',
-	},
-];
 
-const WeeklyServicesSection = () => {
+
+const WeeklyServicesSection = ({
+	withAction = true,
+}: {
+	withAction?: boolean;
+}) => {
 	return (
 		<SectionWrapper className='bg-primary/5 flex-col gap-10'>
 			<AnimateOnView className='text-center'>
@@ -72,7 +34,7 @@ const WeeklyServicesSection = () => {
 						key={index}
 						transition={{
 							duration: 0.6,
-							delay: index * 0.2,
+							// delay: index * 0.2,
 							ease: 'linear',
 						}}>
 						<Card className='w-full min-h-[150px]'>
@@ -100,11 +62,13 @@ const WeeklyServicesSection = () => {
 					</AnimateOnView>
 				))}
 			</div>
-			<Button
-				size={'lg'}
-				className='rounded-full min-w-[250px] sm:w-fit py-6 text-lg'>
-				View All Events{' '}
-			</Button>
+			{withAction && (
+				<Button
+					size={'lg'}
+					className='rounded-full min-w-[250px] sm:w-fit py-6 text-lg'>
+					View All Events{' '}
+				</Button>
+			)}
 		</SectionWrapper>
 	);
 };
