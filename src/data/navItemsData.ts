@@ -16,6 +16,10 @@ export const navItemsData:
             label: 'Services',
         },
         {
+            link: `/#${sectionIds.valuesSection}`,
+            label: 'Our Values',
+        },
+        {
             link: `/#${sectionIds.messageFromPastorSection}`,
             label: 'Message From Pastor',
         },
@@ -30,8 +34,8 @@ export const navItemsData:
             label: 'Church History',
         },
         {
-            link: `/about#${sectionIds.valuesSection}`,
-            label: 'Our Values',
+            link: `/about#${sectionIds.whatWeBelieveSection}`,
+            label: 'What We Believe',
         },
         {
             link: `/about#${sectionIds.meetPastorSection}`,
