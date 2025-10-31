@@ -1,5 +1,5 @@
 import AnimateOnView from '../animation/AnimateInView';
-import pastorImg from '../../assets/images/pastor.jpeg';
+import pastorImg from '../../assets/images/Pastor.png';
 import SectionWrapper from '../wrappers/SectionWrapper';
 
 const MeetPastorSection = () => {
@@ -66,7 +66,7 @@ const MeetPastorSection = () => {
 				<img
 					alt='pastor'
 					src={pastorImg}
-					className='w-full h-auto rounded-md'
+					className='w-full h-auto rounded-md max-w-sm'
 				/>
 			</AnimateOnView>
 		</SectionWrapper>

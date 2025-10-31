@@ -1,5 +1,5 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
-import img from '../../assets/images/worship-img7.jpg';
+import img from '../../assets/images/all-together.png';
 import { Button } from '../ui/button';
 import AnimateOnRender from '../animation/AnimateOnRender';
 

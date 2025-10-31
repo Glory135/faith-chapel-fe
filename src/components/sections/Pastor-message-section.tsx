@@ -1,10 +1,10 @@
 import AnimateOnView from '../animation/AnimateInView';
-import pastorImg from '../../assets/images/pastor.jpeg';
+import pastorImg from '../../assets/images/Pastor.png';
 import SectionWrapper from '../wrappers/SectionWrapper';
 
 const PastorMessageSection = () => {
 	return (
-		<SectionWrapper className='flex-wrap gap-5'>
+		<SectionWrapper className='flex-wrap gap-10'>
 			<div className='flex-1 min-w-xs sm:min-w-sm md:max-w-lg text-start flex flex-col gap-3'>
 				<AnimateOnView
 					initial={{ opacity: 0, x: -50 }}
@@ -72,7 +72,7 @@ const PastorMessageSection = () => {
 				<img
 					alt='pastor'
 					src={pastorImg}
-					className='w-full h-auto rounded-md'
+					className='w-full h-auto rounded-md max-w-sm'
 				/>
 			</AnimateOnView>
 		</SectionWrapper>
