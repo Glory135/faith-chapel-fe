@@ -13,5 +13,6 @@ export const sectionIds = {
   valuesSection: "values",
   pastoralHistory: "postorial-history",
   meetPastorSection: "our-pastor",
-  bishopsSection: "bishops"
+  bishopsSection: "bishops",
+  whatWeBelieveSection: "what-we-believe"
 }
