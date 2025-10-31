@@ -6,9 +6,9 @@ const MinistriesHeroSection = () => {
 		<HeroWrapper
 			backgroundImg={img}
 			title='Our Ministries'
-			subtitle='As we share God’s Word, root in you, and you become exactly what the Lord wants you to be. The Holy Spirit gets a hold of your life, and His vision becomes real to you and in your life.'
+			subtitle="Faith AME Church is committed to serving our community through various ministries. Each ministry has been designed to fulfill our mission of spreading God's word and serving His people."
 			id='about-hero'
-			className='md:py-32! min-h-0 h-auto'>
+			className='py-10! md:py-32! min-h-0 h-auto'>
 			<div className=''></div>
 		</HeroWrapper>
 	);

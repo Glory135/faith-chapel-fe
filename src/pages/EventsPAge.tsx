@@ -5,10 +5,8 @@ import EventsTimelineSection from '../components/sections/Events-timeline-sectio
 export function EventsPage() {
 	return (
 		<PageWrapper>
-			{/* Header Section */}
 			<EventsHeroSection />
             <EventsTimelineSection />
-
 		</PageWrapper>
 	);
 }

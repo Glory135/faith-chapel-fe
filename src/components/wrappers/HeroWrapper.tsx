@@ -30,7 +30,7 @@ const HeroWrapper = ({
 			<div className='flex flex-col gap-5 lg:items-center text-white my-[20vh] md:m-0'>
 				<AnimateOnRender>
 					{' '}
-					<h1 className='font-bold text-5xl lg:text-7xl text-wrap'>
+					<h1 className='font-bold text-4xl! sm:text-5xl! lg:text-66xl! text-wrap'>
 						{title}
 					</h1>
 				</AnimateOnRender>
@@ -42,7 +42,7 @@ const HeroWrapper = ({
 							ease: 'easeOut',
 							delay: 0.5,
 						}}>
-						<p className='text-2xl max-w-4xl'>{subtitle}</p>
+						<p className='text-lg max-w-4xl'>{subtitle}</p>
 					</AnimateOnRender>
 				)}
 				{children}
