@@ -20,12 +20,12 @@ const pastors: Pastor[] = [
 export function PastorsHistory() {
 	return (
 		<div className='py-20 px-6'>
-			<div className='max-w-5xl mx-auto'>
+			<AnimateOnView className='max-w-5xl mx-auto'>
 				{/* Section Header */}
 				<div className='text-center mb-16'>
-					<h2 className='text-primary font-semibold text-lg mb-4'>
+					<h1 className='text-primary font-semibold text-lg mb-4'>
 						Our Pastoral Legacy
-					</h2>
+					</h1>
 					<div className='w-24 h-1 bg-primary mx-auto mb-6'></div>
 					<p className='text-gray-700 max-w-2xl mx-auto'>
 						Honoring the faithful shepherds who have led Faith AME
@@ -82,7 +82,7 @@ export function PastorsHistory() {
 						))}
 					</div>
 				</div>
-			</div>
+			</AnimateOnView>
 		</div>
 	);
 }

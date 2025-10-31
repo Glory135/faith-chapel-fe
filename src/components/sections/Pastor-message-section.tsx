@@ -72,7 +72,7 @@ const PastorMessageSection = () => {
 				<img
 					alt='pastor'
 					src={pastorImg}
-					className='w-full h-auto rounded-md max-w-sm'
+					className='w-full h-auto rounded-md max-w-sm shadow-lg'
 				/>
 			</AnimateOnView>
 		</SectionWrapper>
