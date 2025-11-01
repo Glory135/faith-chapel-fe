@@ -23,7 +23,7 @@ export function ContactPage() {
 			</div>
 
 			{/* Main Content */}
-			<div className='mx-auto px-6 py-16 text-start'>
+			<div id={sectionIds.contactForm} className='mx-auto px-6 py-16 text-start'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
 					{/* Contact Information */}
 					<div>

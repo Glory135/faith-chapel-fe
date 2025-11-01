@@ -46,7 +46,16 @@ export const navItemsData:
             label: 'Leadership',
         },
     ],
-    Ministries: `/ministries#${sectionIds.ministriesHero}`,
+    Ministries: [
+        {
+            link: `/ministries#${sectionIds.ministriesHero}`,
+            label: 'Ministry Programs',
+        },
+        {
+            link: `/ministries#${sectionIds.partners}`,
+            label: 'Our Partners',
+        },
+    ],
     Events: `/events#${sectionIds.eventsHero}`,
     "Contact Us": `/contact#${sectionIds.contactHero}`,
 };

@@ -46,7 +46,7 @@ export const socialMediaDetails: SocialInfo[] = [
 	{
 		icon: <FaFacebook size={25} />,
 		title: 'Facebook',
-		link: 'tel:+11234567890',
+		link: 'https://www.facebook.com/faith.chapel.ame.church.2023',
 	},
 	{
 		icon: <FaInstagram size={25} />,

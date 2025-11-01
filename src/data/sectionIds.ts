@@ -5,6 +5,7 @@ export const sectionIds = {
   eventsHero: "events-hero",
   contactHero: "contact-hero",
 
+  contactForm: "contact-form",
   aboutUsSection: "aboutU-us",
   weeklyServicesSection: "weekly-services",
   missionSection: "mission",
@@ -14,5 +15,6 @@ export const sectionIds = {
   pastoralHistory: "postorial-history",
   meetPastorSection: "our-pastor",
   bishopsSection: "bishops",
-  whatWeBelieveSection: "what-we-believe"
+  whatWeBelieveSection: "what-we-believe",
+  partners: "partners",
 }

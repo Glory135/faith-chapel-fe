@@ -14,7 +14,10 @@ const FooterSection = () => {
 					<Logo color='white' />
 					<div className='flex gap-2 items-center'>
 						{socialMediaDetails.map((social, index) => (
-							<a href={social.link || '#'} key={index}>
+							<a
+								href={social.link || '#'}
+								target='__blank'
+								key={index}>
 								{social.icon}
 							</a>
 						))}
@@ -28,7 +31,10 @@ const FooterSection = () => {
 							className='flex gap-2 items-start text-start'>
 							{contact.icon}
 							{contact?.link && contact?.details?.length === 1 ? (
-								<a href={contact?.link} className=''>
+								<a
+									href={contact?.link}
+									target='__blank'
+									className=''>
 									{contact?.details[0]}
 								</a>
 							) : contact?.link &&

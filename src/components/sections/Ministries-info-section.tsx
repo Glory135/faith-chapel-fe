@@ -4,6 +4,8 @@ import { cn } from '../../lib/utils';
 import { buttonVariants } from '../ui/button';
 import AnimateOnView from '../animation/AnimateInView';
 import AnimateOnRender from '../animation/AnimateOnRender';
+import { Link } from 'react-router';
+import { sectionIds } from '../../data/sectionIds';
 
 const MinistriesInfoSection = () => {
 	return (
@@ -84,16 +86,16 @@ const MinistriesInfoSection = () => {
 						in our ministries.
 					</p>
 					<div className='flex flex-wrap justify-center gap-4'>
-						<a
-							href='#contact'
+						<Link
+							to={`/contact#${sectionIds.contactHero}`}
 							className={cn(
 								buttonVariants({ size: 'lg' }),
 								'text-primary-foreground!'
 							)}>
 							Get Involved
-						</a>
+						</Link>
 						<a
-							href='#support'
+							href=''
 							className={cn(
 								buttonVariants({
 									size: 'lg',
