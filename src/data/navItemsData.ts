@@ -1,11 +1,12 @@
 import { sectionIds } from "./sectionIds";
 
 export const navItemsData:
-    { [key: string]: { link: string; label: string }[] | string } = {
+    { [key: string]: { link: string; label: string, showOnMobile?: boolean }[] | string } = {
     Home: [
         {
             link: `/#${sectionIds.homeHero}`,
             label: 'Home',
+            showOnMobile: true,
         },
         {
             link: `/#${sectionIds.aboutUsSection}`,
@@ -14,6 +15,7 @@ export const navItemsData:
         {
             link: `/#${sectionIds.weeklyServicesSection}`,
             label: 'Services',
+            showOnMobile: true,
         },
         {
             link: `/#${sectionIds.valuesSection}`,
@@ -28,6 +30,7 @@ export const navItemsData:
         {
             link: `/about#${sectionIds.aboutHero}`,
             label: 'About',
+            showOnMobile: true,
         },
         {
             link: `/about#${sectionIds.historySection}`,
@@ -40,6 +43,7 @@ export const navItemsData:
         {
             link: `/about#${sectionIds.meetPastorSection}`,
             label: 'Meet Our Pastor',
+            showOnMobile: true,
         },
         {
             link: `/about#${sectionIds.pastoralHistory}`,
@@ -50,10 +54,12 @@ export const navItemsData:
         {
             link: `/ministries#${sectionIds.ministriesHero}`,
             label: 'Ministry Programs',
+            showOnMobile: true,
         },
         {
             link: `/ministries#${sectionIds.partners}`,
             label: 'Our Partners',
+            showOnMobile: true,
         },
     ],
     Events: `/events#${sectionIds.eventsHero}`,

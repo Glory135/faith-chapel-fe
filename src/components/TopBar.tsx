@@ -32,7 +32,9 @@ const TopBar = () => {
 		<>
 			<section
 				className={`w-full h-20 fixed top-0 left-0 z-50 backdrop-blur-md transition-all ease-in-out  ${
-					scrollPosition > 100 && !menuOpen
+					menuOpen
+						? 'bg-primary'
+						: scrollPosition > 100
 						? 'bg-primary/70 shadow-md'
 						: 'bg-transparent'
 				}`}>
@@ -95,9 +97,11 @@ const TopBar = () => {
 					</NavigationMenu>
 
 					<Button className='hidden md:flex items-center capitalize'>
-						<BiDonateHeart /> 
-						<span className='hidden lg:flex'>MAKE A LOVE OFFERING</span> 
-						<span className='flex lg:hidden'>Donate</span> 
+						<BiDonateHeart />
+						<span className='hidden lg:flex'>
+							MAKE A LOVE OFFERING
+						</span>
+						<span className='flex lg:hidden'>Donate</span>
 					</Button>
 
 					{menuOpen ? (
@@ -118,24 +122,46 @@ const TopBar = () => {
 						initial={{ height: 0, y: '-100%', opacity: 0.5 }}
 						animate={{ height: 'auto', y: 0, opacity: 1 }}
 						transition={{ ease: 'easeOut', duration: 0.05 }}
-						className='md:hidden absolute top-full z-30 left-0 right-0 w-full bg-background min-h-[400px] h-auto p-5 shadow-lg'>
+						className='md:hidden absolute top-full z-30 left-0 right-0 w-full bg-background text-foreground 
+						max-h-[80vh] overflow-y-auto min-h-[400px] h-auto p-5 shadow-lg py-5'>
 						<ul className='w-full h-fit flex flex-col justify-center items-center'>
 							{Object.entries(navItemsData).map(
 								([section, navItem]) => {
 									return (
-										<li
-											key={section}
-											className='w-[90%] p-5 border-b flex justify-center items-center'>
-											<Link
-												to={
-													typeof navItem === 'string'
-														? (navItem as string)
-														: (navItem[0]
-																.link as string)
-												}>
-												{section}
-											</Link>
-										</li>
+										<>
+											{typeof navItem === 'string' ? (
+												<li
+													key={section}
+													className='w-[90%] p-5 border-b flex justify-center items-center'>
+													<Link
+														to={navItem as string}>
+														{section}
+													</Link>
+												</li>
+											) : (
+												navItem.map((item, itmKey) => {
+													if (!item.showOnMobile)
+														return null;
+													return (
+														<li
+															onClick={() =>
+																setMenuOpen(
+																	false
+																)
+															}
+															key={`${itmKey}-${section}`}
+															className='w-[90%] p-5 border-b flex justify-center items-center'>
+															<Link
+																to={
+																	item.link as string
+																}>
+																{item.label}
+															</Link>
+														</li>
+													);
+												})
+											)}
+										</>
 									);
 								}
 							)}

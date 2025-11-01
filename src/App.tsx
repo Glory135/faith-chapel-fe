@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { HashRouter, Route, Routes } from 'react-router';
 import './App.css';
 import ScrollToTop from './components/ScrollTotop';
 import ScrollToHashElement from './components/ScrollToHash';
@@ -13,7 +13,7 @@ import { ContactPage } from './pages/ContactPage';
 function App() {
 	return (
 		<main className='w-full min-h-screen h-auto flex flex-col items-center'>
-			<BrowserRouter>
+			<HashRouter>
 				<ScrollToHashElement />
 				<ScrollToTop />
 				<TopBar />
@@ -25,7 +25,7 @@ function App() {
 					<Route path='/contact' element={<ContactPage />} />
 				</Routes>
 				<FooterSection />
-			</BrowserRouter>
+			</HashRouter>
 		</main>
 	);
 }
