@@ -8,7 +8,7 @@ import {
 import { Separator } from './ui/separator';
 import { MapPin, Calendar, Clock, ExternalLink } from 'lucide-react';
 import { Button } from './ui/button';
-import type { EventItem } from '../hooks/useEvents';
+import type { EventItem } from '../hooks/useEvents'; // now coming from Sanity
 
 interface EventDialogProps {
 	open: boolean;
@@ -19,13 +19,22 @@ interface EventDialogProps {
 export function EventDialog({ open, onClose, event }: EventDialogProps) {
 	if (!event) return null;
 
-	const formatDate = (date: string) => new Date(date).toDateString();
+	const formatDate = (date: string) => {
+		try {
+			return new Date(date).toLocaleDateString(undefined, {
+				year: 'numeric',
+				month: 'short',
+				day: 'numeric',
+			});
+		} catch {
+			return date;
+		}
+	};
+
 	const timeRange =
 		event.StartTime && event.EndTime
 			? `${event.StartTime} - ${event.EndTime}`
-			: event.StartTime
-			? event.StartTime
-			: '';
+			: event.StartTime || '';
 
 	return (
 		<Dialog open={open} onOpenChange={onClose}>

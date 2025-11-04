@@ -22,7 +22,7 @@ const localizer = dateFnsLocalizer({
 export default function EventsCalendarSection() {
 	const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
 	const [dialogOpen, setDialogOpen] = useState(false);
-	const { events, loading } = useEvents();
+	const { events, loading, handleRefresh } = useEvents();
 
 	const handleSelectEvent = (event: any) => {
 		setSelectedEvent(event.original || event);
@@ -38,39 +38,40 @@ export default function EventsCalendarSection() {
 		original: e,
 	}));
 
-	if (loading) return <p>Loading events...</p>;
-
 	return (
 		<SectionWrapper className='w-full flex-col py-10!'>
 			<h1>Our Events Calendar</h1>
 			<div className='w-full justify-start items-center'>
-				<Button
-					variant={'secondary'}
-					onClick={() => localStorage.removeItem(CACHE_KEY)}>
+				<Button variant={'secondary'} onClick={handleRefresh}>
 					<RefreshCw
 						className={`h-4 w-4 mr-2 ${
 							loading ? 'animate-spin' : ''
 						}`}
 					/>
-					{loading ? 'Refreshing...' : 'Refresh Events'}
+					{loading ? 'loading...' : 'Refresh Events'}
 				</Button>
 			</div>
-			<div className='rbc-calendar-container '>
-				<Calendar
-					localizer={localizer}
-					events={calendarEvents}
-					startAccessor='start'
-					endAccessor='end'
-					defaultView='month'
-					defaultDate={new Date()}
-					style={{ minHeight: 700, width: '100%', minWidth: 700 }}
-					onSelectEvent={handleSelectEvent}
-					components={{
-						// @ts-expect-error just do
-						toolbar: CustomCalendarToolbar,
-					}}
-				/>
-			</div>
+			{loading ? (
+				<p>Loading calendar...</p>
+			) : (
+				<div className='rbc-calendar-container '>
+					<Calendar
+						localizer={localizer}
+						events={calendarEvents}
+						startAccessor='start'
+						endAccessor='end'
+						defaultView='month'
+						defaultDate={new Date()}
+						style={{ minHeight: 700, width: '100%', minWidth: 700 }}
+						onSelectEvent={handleSelectEvent}
+						components={{
+							// @ts-expect-error just do
+							toolbar: CustomCalendarToolbar,
+						}}
+					/>
+				</div>
+			)}
+
 			<EventDialog
 				open={dialogOpen}
 				onClose={() => setDialogOpen(false)}
