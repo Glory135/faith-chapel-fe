@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import { format, parse, startOfWeek, getDay } from 'date-fns';
 import { enUS } from 'date-fns/locale/en-US';
-import { CACHE_KEY, useEvents, type EventItem } from '../../hooks/useEvents';
+import { useEvents, type EventItem } from '../../hooks/useEvents';
 import SectionWrapper from '../wrappers/SectionWrapper';
 import { Button } from '../ui/button';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
