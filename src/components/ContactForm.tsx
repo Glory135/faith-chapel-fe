@@ -2,46 +2,36 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
-import React, { useState } from 'react';
+import React from 'react';
 import { Send } from 'lucide-react';
 
 const ContactForm = () => {
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		phone: '',
-		subject: '',
-		message: '',
-	});
-
-	const handleSubmit = (e: React.FormEvent) => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		// Handle form submission here
-		console.log('Form submitted:', formData);
-		alert('Thank you for your message! We will get back to you soon.');
-		// Reset form
-		setFormData({
-			name: '',
-			email: '',
-			phone: '',
-			subject: '',
-			message: '',
-		});
+		const form = e.currentTarget;
+		const formData = new FormData(form);
+
+		const response = await fetch(form.action, {
+			method: form.method,
+			body: formData,
+			headers: { Accept: 'application/json' },
+		});		
+
+		if (response.ok) {
+			alert("Your message has been sent successfully!")
+			form.reset();
+		}
 	};
 
-	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-	) => {
-		setFormData({
-			...formData,
-			[e.target.name]: e.target.value,
-		});
-	};
 	return (
 		<div>
-			<h2 className='text-primary font-semibold text-xl mb-8'>Send Us a Message</h2>
+			<h2 className='text-primary font-semibold text-xl mb-8'>
+				Send Us a Message
+			</h2>
 
 			<form
+				action='https://formspree.io/f/mzzklndz'
+				method='POST'
 				onSubmit={handleSubmit}
 				className='bg-white rounded-lg shadow-lg p-8'>
 				<div className='space-y-6'>
@@ -57,8 +47,6 @@ const ContactForm = () => {
 							name='name'
 							type='text'
 							required
-							value={formData.name}
-							onChange={handleChange}
 							className='w-full border-gray-300 focus:border-primary  focus:ring-primary '
 							placeholder='Enter your full name'
 						/>
@@ -76,8 +64,6 @@ const ContactForm = () => {
 							name='email'
 							type='email'
 							required
-							value={formData.email}
-							onChange={handleChange}
 							className='w-full border-gray-300 focus:border-primary  focus:ring-primary '
 							placeholder='your.email@example.com'
 						/>
@@ -94,8 +80,6 @@ const ContactForm = () => {
 							id='phone'
 							name='phone'
 							type='tel'
-							value={formData.phone}
-							onChange={handleChange}
 							className='w-full border-gray-300 focus:border-primary  focus:ring-primary '
 							placeholder='(123) 456-7890'
 						/>
@@ -113,8 +97,6 @@ const ContactForm = () => {
 							name='subject'
 							type='text'
 							required
-							value={formData.subject}
-							onChange={handleChange}
 							className='w-full border-gray-300 focus:border-primary  focus:ring-primary '
 							placeholder='How can we help you?'
 						/>
@@ -131,8 +113,6 @@ const ContactForm = () => {
 							id='message'
 							name='message'
 							required
-							value={formData.message}
-							onChange={handleChange}
 							rows={6}
 							className='w-full border-gray-300 focus:border-primary  focus:ring-primary  resize-none'
 							placeholder='Share your thoughts, questions, or prayer requests...'
@@ -140,9 +120,7 @@ const ContactForm = () => {
 					</div>
 
 					{/* Submit Button */}
-					<Button
-						type='submit'
-						className='w-full py-6'>
+					<Button type='submit' className='w-full py-6'>
 						<Send className='w-5 h-5' />
 						Send Message
 					</Button>

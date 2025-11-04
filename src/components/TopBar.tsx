@@ -39,7 +39,9 @@ const TopBar = () => {
 						: 'bg-transparent'
 				}`}>
 				<div className='max-w-[1440px] h-full mx-auto flex justify-between items-center gap-5  px-5'>
-					<Logo color='white' />
+					<div className='w-fit'>
+						<Logo color='white' responsive />
+					</div>
 
 					{/* Desktop nav */}
 					<NavigationMenu viewport={false} className='hidden md:flex'>
