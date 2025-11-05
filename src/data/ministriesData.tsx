@@ -15,7 +15,7 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Conducting worship service, leadership development, public speaking',
 		icon: <Users className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1563902341721-029085ad9347?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMGNodXJjaCUyMHdvcnNoaXB8ZW58MXx8fHwxNzYxOTA3MTgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+		image: 'https://images.unsplash.com/photo-1624500055301-c62a900632f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYW1lcmljYW4lMjB5b3V0aCUyMGNodXJjaCUyMHxlbnwxfHx8fDE3NjIzODMwNzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
 	},
 	{
 		title: 'Media Ministry',
@@ -39,7 +39,7 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Nurturing the next generation of worship leaders through music education and training.',
 		icon: <Music className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1554446422-c4d46271ab85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWFubyUyMG11c2ljJTIwbGVzc29uc3xlbnwxfHx8fDE3NjE5MDcxODN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+		image: 'https://images.unsplash.com/photo-1611770391544-6ad63e91aa63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHlvdXRoJTIwcGlhbm8lMjBsZXNzb25zfGVufDF8fHx8MTc2MjM4MzA3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
 	},
 	{
 		title: 'Infrastructure',
