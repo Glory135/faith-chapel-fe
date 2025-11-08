@@ -49,19 +49,13 @@ export const navItemsData:
             link: `/about#${sectionIds.pastoralHistory}`,
             label: 'Leadership',
         },
-    ],
-    Ministries: [
         {
-            link: `/ministries#${sectionIds.ministriesHero}`,
-            label: 'Ministry Programs',
-            showOnMobile: true,
-        },
-        {
-            link: `/ministries#${sectionIds.partners}`,
+            link: `/about#${sectionIds.partners}`,
             label: 'Our Partners',
             showOnMobile: true,
         },
     ],
+    Ministries: `/ministries#${sectionIds.ministriesHero}`,
     Events: `/events#${sectionIds.eventsHero}`,
     "Contact Us": `/contact#${sectionIds.contactHero}`,
 };

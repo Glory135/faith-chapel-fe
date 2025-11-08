@@ -59,14 +59,14 @@ export function PartnerOrganizations() {
 									.map((org, orgIndex) => (
 										<div
 											key={orgIndex}
-											className='bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group border-t-4 border-primary'>
+											className=' bg-accent text-start rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group border-t-4 border-primary'>
 											{/* Organization Header */}
 											<div className='p-6 pb-4'>
-												<h4 className='text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300'>
+												<h4 className='text-secondary-foreground mb-2 group-hover:text-primary transition-colors duration-300'>
 													{org.name}
 												</h4>
 												{org.description && (
-													<p className='text-gray-600 mb-4'>
+													<p className='text-gray-500 mb-4'>
 														{org.description}
 													</p>
 												)}

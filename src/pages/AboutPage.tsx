@@ -1,7 +1,7 @@
 import AboutHeroSection from '../components/sections/About-hero-section';
 import HistorySection from '../components/sections/History-section';
 import MeetPastorSection from '../components/sections/MeetPastor-section';
-// import MissionAndVisionStatementSection from '../components/sections/MissionAndVision-section';
+import { PartnerOrganizations } from '../components/sections/Partners-section';
 import { PastorsHistory } from '../components/sections/PastorialHistorySection';
 import { BishopsVisited } from '../components/sections/Visited-section';
 import { WhatWeBelieveSection } from '../components/sections/What-we-believe-section';
@@ -12,11 +12,11 @@ export default function AboutPage() {
 		<PageWrapper>
 			<AboutHeroSection />
 			<HistorySection />
-			{/* <MissionAndVisionStatementSection /> */}
 			<WhatWeBelieveSection />
 			<MeetPastorSection />
 			<PastorsHistory />
 			<BishopsVisited />
+			<PartnerOrganizations />
 		</PageWrapper>
 	);
 }
