@@ -1,6 +1,6 @@
 import SectionWrapper from '../wrappers/SectionWrapper';
 import backgroundImg from '../../assets/images/img2.jpg';
-import img from '../../assets/images/together-img.avif';
+import img from '../../assets/images/hands-out.jpg';
 import AnimateOnView from '../animation/AnimateInView';
 import { CgCross } from 'react-icons/cg';
 import { sectionIds } from '../../data/sectionIds';

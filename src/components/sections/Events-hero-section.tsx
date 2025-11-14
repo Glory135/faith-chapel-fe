@@ -1,5 +1,5 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
-import img from '../../assets/images/img4.png';
+import img from '../../assets/images/together-outside.jpg';
 import { sectionIds } from '../../data/sectionIds';
 
 const EventsHeroSection = () => {
