@@ -1,7 +1,7 @@
 import SectionWrapper from '../wrappers/SectionWrapper';
 import AnimateOnView from '../animation/AnimateInView';
 import img from '../../assets/images/holding-bible.jpg';
-import { Button, buttonVariants } from '../ui/button';
+import { buttonVariants } from '../ui/button';
 import { cn } from '../../lib/utils';
 import { sectionIds } from '../../data/sectionIds';
 import { Link } from 'react-router';
