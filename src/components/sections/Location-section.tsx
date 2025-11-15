@@ -1,5 +1,3 @@
-import { MapPin } from 'lucide-react';
-
 const LocationSection = () => {
 	return (
 		<div className='bg-[#1A1A1A] py-16 px-6'>
@@ -12,10 +10,14 @@ const LocationSection = () => {
 				</p>
 
 				{/* Placeholder for map - you can add Google Maps embed here */}
-				<div className='bg-gray-800 rounded-lg h-96 flex items-center justify-center'>
-					<div className='text-center text-gray-400'>
-						<MapPin className='w-16 h-16 mx-auto mb-4 opacity-50' />
-						<p>Map location coming soon</p>
+				<div className='bg-gray-800 rounded-lg h-96 flex items-center justify-center '>
+					<div className='w-full h-[400px]'>
+						<iframe
+							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.3463740662437!2d-83.41978192407453!3d41.14879267133118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883be3340e28e797%3A0xc6d8d190b2fdafd6!2s220%20Sycamore%20St%2C%20Fostoria%2C%20OH%2044830%2C%20USA!5e0!3m2!1sen!2sng!4v1763206703653!5m2!1sen!2sng'
+							allowFullScreen={true}
+							loading='lazy'
+							referrerPolicy='no-referrer-when-downgrade'
+							className='border-0 w-full h-full'></iframe>
 					</div>
 				</div>
 			</div>
