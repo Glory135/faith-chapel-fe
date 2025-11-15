@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, User } from 'lucide-react';
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebook  } from 'react-icons/fa';
 
 interface ContactInfo {
 	icon: React.ReactNode;

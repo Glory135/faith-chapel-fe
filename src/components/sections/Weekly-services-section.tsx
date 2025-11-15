@@ -9,7 +9,7 @@ import {
 	CardTitle,
 } from '../ui/card';
 import { CgCross } from 'react-icons/cg';
-import { Button, buttonVariants } from '../ui/button';
+import { buttonVariants } from '../ui/button';
 import { serviceData } from '../../data/eventsData';
 import { sectionIds } from '../../data/sectionIds';
 import { Link } from 'react-router';
