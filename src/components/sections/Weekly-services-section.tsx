@@ -9,11 +9,11 @@ import {
 	CardTitle,
 } from '../ui/card';
 import { CgCross } from 'react-icons/cg';
-import { Button } from '../ui/button';
+import { Button, buttonVariants } from '../ui/button';
 import { serviceData } from '../../data/eventsData';
 import { sectionIds } from '../../data/sectionIds';
-
-
+import { Link } from 'react-router';
+import { cn } from '../../lib/utils';
 
 const WeeklyServicesSection = ({
 	withAction = true,
@@ -21,7 +21,9 @@ const WeeklyServicesSection = ({
 	withAction?: boolean;
 }) => {
 	return (
-		<SectionWrapper id={sectionIds.weeklyServicesSection} className='bg-primary/5 flex-col gap-10'>
+		<SectionWrapper
+			id={sectionIds.weeklyServicesSection}
+			className='bg-primary/5 flex-col gap-10'>
 			<AnimateOnView className='text-center'>
 				<h1 className='mb-5'>Join Us for Worship</h1>
 				<p className='max-w-xl'>
@@ -64,11 +66,17 @@ const WeeklyServicesSection = ({
 				))}
 			</div>
 			{withAction && (
-				<Button
-					size={'lg'}
-					className='rounded-full min-w-[250px] sm:w-fit py-6 text-lg'>
-					View All Events{' '}
-				</Button>
+				<Link
+					to={`/events#${sectionIds.eventsHero}`}
+					className={cn(
+						buttonVariants({
+							variant: 'default',
+							size: 'lg',
+						}),
+						'rounded-full min-w-[250px] sm:w-fit py-6 text-lg hover:text-primary-foreground!'
+					)}>
+					View more Events
+				</Link>
 			)}
 		</SectionWrapper>
 	);

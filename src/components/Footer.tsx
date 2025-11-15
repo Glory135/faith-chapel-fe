@@ -40,8 +40,11 @@ const FooterSection = () => {
 							) : contact?.link &&
 							  contact?.details?.length > 1 ? (
 								<div className='space-y-1 flex-col'>
-									<p className=''>{contact?.details[0]}</p>
-									<a href={contact?.link} className=' '>
+									<a
+										href={contact?.link}
+										target='__blank'
+										className=' '>
+										{contact?.details[0]} <br />
 										{contact?.details[1]}
 									</a>
 								</div>

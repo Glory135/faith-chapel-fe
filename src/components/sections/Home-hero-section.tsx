@@ -1,8 +1,10 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
 import img from '../../assets/images/all-together.png';
-import { Button } from '../ui/button';
+import { Button, buttonVariants } from '../ui/button';
 import AnimateOnRender from '../animation/AnimateOnRender';
 import { sectionIds } from '../../data/sectionIds';
+import { Link } from 'react-router';
+import { cn } from '../../lib/utils';
 
 const HomeHeroSection = () => {
 	return (
@@ -14,12 +16,17 @@ const HomeHeroSection = () => {
 			<AnimateOnRender
 				transition={{ delay: 1 }}
 				className='flex flex-wrap justify-center items-center gap-3'>
-				<Button
-					size={'lg'}
-					variant={'outline'}
-					className='rounded-full w-[250px] sm:w-fit py-6 bg-transparent'>
+				<Link
+					to={`/about#${sectionIds.historySection}`}
+					className={cn(
+						buttonVariants({
+							variant: 'outline',
+							size: 'lg',
+						}),
+						'rounded-full w-[250px] sm:w-fit py-6 bg-transparent hover:text-secondary-foreground!'
+					)}>
 					Learn More
-				</Button>
+				</Link>
 				<Button
 					size={'lg'}
 					variant={'secondary'}

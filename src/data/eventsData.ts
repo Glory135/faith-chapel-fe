@@ -82,45 +82,24 @@ export const eventsData: MonthEvents[] = [
 
 export const serviceData = [
     {
-        title: 'Sunday Service',
+        title: 'Church',
         description:
-            'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
+            'A vibrant Sunday worship service filled with praise, prayer, and a life-changing message to strengthen your walk with God.',
         day: 'Every Sunday',
-        time: '10:00 AM - 12:00 PM',
+        time: '11:00 AM - 01:00 PM',
     },
     {
         title: 'Sunday School',
         description:
-            'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
+            'A practical and engaging teaching session designed to deepen your understanding of the Bible and build a strong spiritual foundation.',
         day: 'Every Sunday',
-        time: '7:00 AM - 9:00 AM',
+        time: '09:00 AM - 10:30 AM',
     },
     {
         title: 'Bible Study',
         description:
-            'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-        day: 'Every Tuesday and Thursday ',
-        time: '7:00 PM - 8:30 PM',
-    },
-    {
-        title: 'Sunday Service',
-        description:
-            'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-        day: 'Every Sunday',
-        time: '10:00 AM - 12:00 PM',
-    },
-    {
-        title: 'Sunday School',
-        description:
-            'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-        day: 'Every Sunday',
-        time: '7:00 AM - 9:00 AM',
-    },
-    {
-        title: 'Bible Study',
-        description:
-            'Join us for worship, prayer, and an inspiring message that will uplift your spirit and strengthen your faith.',
-        day: 'Every Tuesday and Thursday ',
-        time: '7:00 PM - 8:30 PM',
+            'An interactive midweek study where we dive deeper into the Scriptures, explore biblical principles, and grow together in faith.',
+        day: 'Every Wednesday',
+        time: '06:00 PM - 07:00 PM',
     },
 ];

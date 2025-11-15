@@ -1,9 +1,10 @@
 import SectionWrapper from '../wrappers/SectionWrapper';
 import AnimateOnView from '../animation/AnimateInView';
 import img from '../../assets/images/holding-bible.jpg';
-import { Button } from '../ui/button';
+import { Button, buttonVariants } from '../ui/button';
 import { cn } from '../../lib/utils';
 import { sectionIds } from '../../data/sectionIds';
+import { Link } from 'react-router';
 
 const AboutSection = ({
 	withAction = true,
@@ -18,8 +19,7 @@ const AboutSection = ({
 				'gap-10 flex-col-reverse sm:flex-row flex-wrap pt-10 overflow-x-hidden',
 				className
 			)}
-			id={sectionIds.aboutUsSection}
-			>
+			id={sectionIds.aboutUsSection}>
 			<div className='relative  h-full flex-1 min-w-xs sm:min-w-sm md:max-w-lg '>
 				<div className='absolute -top-10 -left-[50px] -z-10 w-[25%] aspect-square rounded-lg bg-primary/50'></div>
 				<div className='absolute -bottom-[70px] -right-[30px] -z-10 w-[50%] aspect-square rounded-lg bg-primary/20'></div>
@@ -77,15 +77,23 @@ const AboutSection = ({
 					</p>
 					<p className=''>
 						Pastor's Name:{' '}
-						<span className='font-semibold'>Pastor Knox</span>
+						<span className='font-semibold'>
+							Rev. Calvin Montgomery
+						</span>
 					</p>
 				</AnimateOnView>
 				{withAction && (
-					<Button
-						className='rounded-full min-w-[200px] sm:w-fit py-6'
-						size={'lg'}>
+					<Link
+						to={`/about#${sectionIds.historySection}`}
+						className={cn(
+							buttonVariants({
+								variant: 'default',
+								size: 'lg',
+							}),
+							'rounded-full min-w-[200px] sm:w-fit py-6 hover:text-primary-foreground!'
+						)}>
 						Learn More{' '}
-					</Button>
+					</Link>
 				)}
 			</div>
 		</SectionWrapper>

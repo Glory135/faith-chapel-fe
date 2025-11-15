@@ -25,20 +25,20 @@ export const contactDetails: ContactInfo[] = [
 	{
 		icon: <Mail className='w-6 h-6' />,
 		title: 'Email',
-		details: ['info@faithamechurch.org'],
-		link: 'mailto:info@faithamechurch.org',
+		details: ['fostoriafaithchapelame@gmail.com'],
+		link: 'mailto:fostoriafaithchapelame@gmail.com',
 	},
 	{
 		icon: <MapPin className='w-6 h-6' />,
 		title: 'Address',
-		details: ['Faith AME Church 123 Church Street', 'City, State 12345'],
-		link: 'skjjnskjdjn',
+		details: ['220 Sycamore Street', 'Fostoria, Ohio 44830'],
+		link: 'https://maps.app.goo.gl/UNJwhrPFY19JW65AA',
 	},
 	{
 		icon: <User className='w-6 h-6' />,
 		title: 'Pastor',
-		details: ['Rev. Calvin Montgomery', 'pastor@faithamechurch.org'],
-		link: 'mailto:pastor@faithamechurch.org',
+		details: ['Rev. Calvin Montgomery', ''],
+		// link: 'mailto:pastor@faithamechurch.org',
 	},
 ];
 
@@ -48,14 +48,14 @@ export const socialMediaDetails: SocialInfo[] = [
 		title: 'Facebook',
 		link: 'https://www.facebook.com/faith.chapel.ame.church.2023',
 	},
-	{
-		icon: <FaInstagram size={25} />,
-		title: 'Instagram',
-		link: 'mailto:info@faithamechurch.org',
-	},
-	{
-		icon: <FaYoutube size={25} />,
-		title: 'Youtube',
-		link: 'dsdsld',
-	},
+	// {
+	// 	icon: <FaInstagram size={25} />,
+	// 	title: 'Instagram',
+	// 	link: 'mailto:fostoriafaithchapelame@gmail.com',
+	// },
+	// {
+	// 	icon: <FaYoutube size={25} />,
+	// 	title: 'Youtube',
+	// 	link: 'dsdsld',
+	// },
 ];

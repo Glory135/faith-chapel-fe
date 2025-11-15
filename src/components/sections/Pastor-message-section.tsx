@@ -26,7 +26,7 @@ const PastorMessageSection = () => {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.4 }}>
 					<p>
-						I hope this letter finds you well. As a new pastor in
+						I hope this letter finds you well. As the pastor in
 						your community, I am excited to begin our spiritual
 						journey together and learn from your strength and faith.
 						In uncertain times, let us remember Philippians 4:13 and
@@ -39,7 +39,7 @@ const PastorMessageSection = () => {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6 }}>
 					<p>
-						Our church is called Zion because it is a place of
+						Our church is called Faith Chapel A.M.E Church because it is a place of
 						refuge, where we find solace and strength in God's
 						presence. I encourage you to engage with our initiatives
 						through volunteering, study groups, or offering support
@@ -63,7 +63,7 @@ const PastorMessageSection = () => {
 					transition={{ duration: 0.7 }}>
 					<p className='font-semibold'>
 						In Christ's Love, <br />
-						Pastor Knox
+						Rev. Calvin Montgomery
 					</p>
 				</AnimateOnView>
 			</div>
