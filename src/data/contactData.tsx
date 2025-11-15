@@ -19,8 +19,8 @@ export const contactDetails: ContactInfo[] = [
 	{
 		icon: <Phone className='w-6 h-6' />,
 		title: 'Phone',
-		details: ['(123) 456-7890'],
-		link: 'tel:+11234567890',
+		details: ['419 379 6227'],
+		link: 'tel:+14193796227',
 	},
 	{
 		icon: <Mail className='w-6 h-6' />,

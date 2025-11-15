@@ -3,8 +3,8 @@ import { sectionIds } from '../../data/sectionIds';
 import AnimateOnView from '../animation/AnimateInView';
 import SectionWrapper from '../wrappers/SectionWrapper';
 
-
 export function PastorsHistory() {
+	const sortedPastors = [...pastors].reverse();
 	return (
 		<SectionWrapper id={sectionIds.pastoralHistory} className='py-20 px-6'>
 			<div className='max-w-5xl mx-auto'>
@@ -26,7 +26,7 @@ export function PastorsHistory() {
 					<div className='absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-primary opacity-20 hidden md:block'></div>
 
 					<div className='space-y-8'>
-						{pastors.map((pastor, index) => (
+						{sortedPastors.map((pastor, index) => (
 							<div
 								key={index}
 								className={`flex flex-col md:flex-row items-center gap-8 ${
