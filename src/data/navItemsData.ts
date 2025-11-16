@@ -56,6 +56,7 @@ export const navItemsData:
         },
     ],
     Ministries: `/ministries#${sectionIds.ministriesHero}`,
+    Bulletins: `/bulletin#${sectionIds.bulletinHero}`,
     Events: `/events#${sectionIds.eventsHero}`,
     "Contact Us": `/contact#${sectionIds.contactHero}`,
 };

@@ -9,23 +9,32 @@ import AboutPage from './pages/AboutPage';
 import MinistriesPage from './pages/MinistriesPage';
 import { EventsPage } from './pages/EventsPAge';
 import { ContactPage } from './pages/ContactPage';
+import BulletinPage from './pages/BulletinPage';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 function App() {
+	const queryClient = new QueryClient();
 	return (
 		<main className='w-full min-h-screen h-auto flex flex-col items-center'>
-			<HashRouter>
-				<ScrollToHashElement />
-				<ScrollToTop />
-				<TopBar />
-				<Routes>
-					<Route path='/' element={<HomePage />} />
-					<Route path='/about' element={<AboutPage />} />
-					<Route path='/ministries' element={<MinistriesPage />} />
-					<Route path='/events' element={<EventsPage />} />
-					<Route path='/contact' element={<ContactPage />} />
-				</Routes>
-				<FooterSection />
-			</HashRouter>
+			<QueryClientProvider client={queryClient}>
+				<HashRouter>
+					<ScrollToHashElement />
+					<ScrollToTop />
+					<TopBar />
+					<Routes>
+						<Route path='/' element={<HomePage />} />
+						<Route path='/about' element={<AboutPage />} />
+						<Route
+							path='/ministries'
+							element={<MinistriesPage />}
+						/>
+						<Route path='/events' element={<EventsPage />} />
+						<Route path='/contact' element={<ContactPage />} />
+						<Route path='/bulletin' element={<BulletinPage />} />
+					</Routes>
+					<FooterSection />
+				</HashRouter>
+			</QueryClientProvider>
 		</main>
 	);
 }

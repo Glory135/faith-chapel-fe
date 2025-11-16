@@ -5,6 +5,7 @@ export const sectionIds = {
   eventsHero: "events-hero",
   contactHero: "contact-hero",
 
+  bulletinHero: "bulletin-hero",
   contactForm: "contact-form",
   aboutUsSection: "aboutU-us",
   weeklyServicesSection: "weekly-services",

@@ -10,7 +10,21 @@ export function ContactPage() {
 	return (
 		<PageWrapper>
 			{/* Hero Header */}
-			<div id={sectionIds.contactHero} className='bg-primary py-20 px-6'>
+			<div id={sectionIds.contactHero} className='relative bg-primary py-20 px-6'>
+				<div className='absolute inset-0 opacity-10'>
+				<div
+					className='absolute inset-0'
+					style={{
+						backgroundImage: `repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(245, 241, 235, 0.1) 10px,
+            rgba(245, 241, 235, 0.1) 20px
+          )`,
+					}}
+				/>
+			</div>
 				<AnimateOnRender className='max-w-6xl mx-auto text-center'>
 					<h1 className='text-white mb-4'>Contact Us</h1>
 					<div className='w-24 h-1 bg-white mx-auto mb-6'></div>
