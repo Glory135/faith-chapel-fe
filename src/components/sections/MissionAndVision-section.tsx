@@ -38,10 +38,11 @@ const MissionAndVisionStatementSection = () => {
 								Our Mission
 							</h3>
 							<p>
-								Faith Chapel A.M.E Church was founded with a
-								vision to create a welcoming community where
-								people from all walks of life can grow in their
-								faith journey.
+								The mission of Faith Chapel AME Church is to
+								minister to the social, spiritual, and physical
+								needs of the unchurched in Fostoria, Ohio to
+								usher in the kingdom of God on earth as it is in
+								heaven.
 							</p>
 						</AnimateOnView>
 						<AnimateOnView
@@ -53,10 +54,22 @@ const MissionAndVisionStatementSection = () => {
 								Our Vision
 							</h3>
 							<p>
-								Faith Chapel A.M.E Church was founded with a
-								vision to create a welcoming community where
-								people from all walks of life can grow in their
-								faith journey.
+								Faith building LEADERS of tomorrow through
+								SPIRITUAL and VOCATIONAL means by providing a
+								safe space, with the offering of spiritual
+								growth in the word of GOD and helping them be
+								more self-reliant in becoming productive members
+								of society by empowering them and giving them
+								the TOOLS for life! Working on self-esteem
+								building, learning social etiquette, problem-
+								solving skills and bringing to the children and
+								their families a range of school and vocational
+								options, including raising money/FINDING FUNDING
+								to help children go to college and
+								vocational-technical schools to help them become
+								their full spiritual and social selves, in
+								pursuit of them becoming healthy, God-loving,
+								God- serving adults.
 							</p>
 						</AnimateOnView>
 						<AnimateOnView
@@ -68,10 +81,12 @@ const MissionAndVisionStatementSection = () => {
 								Value Statement
 							</h3>
 							<p>
-								Faith Chapel A.M.E Church was founded with a
-								vision to create a welcoming community where
-								people from all walks of life can grow in their
-								faith journey.
+								Offering a solid foundation of spiritual growth
+								and development to the families and the
+								community at large by being open and accepting
+								of all people in their journey with/towards
+								Christ. Valuing the power of prayer, learning
+								what “Thus, sayeth the Lord”.
 							</p>
 						</AnimateOnView>
 					</div>
