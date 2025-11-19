@@ -1,4 +1,5 @@
 import AboutHeroSection from '../components/sections/About-hero-section';
+import AuxiliaryMembrsSection from '../components/sections/Auxiliary-membrs-section';
 import HistorySection from '../components/sections/History-section';
 import MeetPastorSection from '../components/sections/MeetPastor-section';
 import { PartnerOrganizations } from '../components/sections/Partners-section';
@@ -14,6 +15,7 @@ export default function AboutPage() {
 			<HistorySection />
 			<WhatWeBelieveSection />
 			<MeetPastorSection />
+			<AuxiliaryMembrsSection />
 			<PastorsHistory />
 			<BishopsVisited />
 			<PartnerOrganizations />

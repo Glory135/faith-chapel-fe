@@ -46,8 +46,13 @@ export const navItemsData:
             showOnMobile: true,
         },
         {
+            link: `/about#${sectionIds.auxiliaryMembersSection}`,
+            label: 'Auxiliary Members',
+            showOnMobile: false,
+        },
+        {
             link: `/about#${sectionIds.pastoralHistory}`,
-            label: 'Leadership',
+            label: 'Pastoral Legacy',
         },
         {
             link: `/about#${sectionIds.partners}`,

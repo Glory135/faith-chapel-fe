@@ -66,9 +66,9 @@ const MinistriesInfoSection = () => {
 
 							{/* Hover Footer */}
 							<div className='bg-[#F5F1EB] px-6 py-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-								<p className='text-gray-600 text-center'>
-									Learn more about how you can get involved
-								</p>
+								<Link to={`/contact#${sectionIds.contactForm}`} className='text-gray-600 text-center'>
+									Contact us to get involved
+								</Link>
 							</div>
 						</AnimateOnRender>
 					))}
