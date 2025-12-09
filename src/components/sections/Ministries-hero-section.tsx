@@ -1,5 +1,5 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
-import img from '../../assets/images/together-img.avif';
+import img from '../../assets/images/new/Young_Peoples_Ministery2.jpg';
 import { sectionIds } from '../../data/sectionIds';
 
 const MinistriesHeroSection = () => {
