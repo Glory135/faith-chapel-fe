@@ -82,7 +82,7 @@ export const eventsData: MonthEvents[] = [
 
 export const serviceData = [
     {
-        title: 'Church',
+        title: 'Morning Worship',
         description:
             'A vibrant Sunday worship service filled with praise, prayer, and a life-changing message to strengthen your walk with God.',
         day: 'Every Sunday',

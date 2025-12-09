@@ -1,4 +1,9 @@
 import { Users, Radio, Bus, Music, Wrench } from 'lucide-react';
+import ypmImg from '../assets/images/new/Young_Peoples_Ministery1.jpg';
+import mediaMinistryImg from '../assets/images/new/media_ministry_02.png';
+import busMinistryImg from '../assets/images/new/bus_ministry.png';
+import infraMinistryImg from '../assets/images/new/Infrastructure_Ministry_05.jpeg';
+import musicMinistryImg from '../assets/images/new/IMG_3056.jpeg';
 
 export interface Ministry {
 	title: string;
@@ -15,7 +20,7 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Conducting worship service, leadership development, public speaking',
 		icon: <Users className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1624500055301-c62a900632f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYW1lcmljYW4lMjB5b3V0aCUyMGNodXJjaCUyMHxlbnwxfHx8fDE3NjIzODMwNzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+		image: ypmImg,
 	},
 	{
 		title: 'Media Ministry',
@@ -23,7 +28,7 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Plan to work with the youth in the development of this system to continue the mission of outreach and evangelism.',
 		icon: <Radio className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1758788505918-0c3957dba531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpYSUyMGJyb2FkY2FzdGluZyUyMGVxdWlwbWVudHxlbnwxfHx8fDE3NjE5MDcxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+		image: mediaMinistryImg,
 	},
 	{
 		title: 'Bus Ministry',
@@ -31,7 +36,7 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Providing transportation to bring members and visitors to worship services and church events.',
 		icon: <Bus className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1754470277734-304a51715d8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHVyY2glMjB0cmFuc3BvcnRhdGlvbiUyMGJ1c3xlbnwxfHx8fDE3NjE5MDcxODN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+		image: busMinistryImg,
 	},
 	{
 		title: 'Youth Development – Music Ministry',
@@ -39,7 +44,7 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Nurturing the next generation of worship leaders through music education and training.',
 		icon: <Music className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1611770391544-6ad63e91aa63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHlvdXRoJTIwcGlhbm8lMjBsZXNzb25zfGVufDF8fHx8MTc2MjM4MzA3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+		image: musicMinistryImg,
 	},
 	{
 		title: 'Infrastructure',
@@ -47,6 +52,6 @@ export const ministriesData: Ministry[] = [
 		description:
 			'Maintaining and improving our facilities to better serve our congregation and community.',
 		icon: <Wrench className='w-6 h-6' />,
-		image: 'https://images.unsplash.com/photo-1760561149408-e9cacadd84fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaHVyY2glMjBidWlsZGluZyUyMHJlbm92YXRpb258ZW58MXx8fHwxNzYxOTA3MTg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+		image: infraMinistryImg,
 	},
 ];

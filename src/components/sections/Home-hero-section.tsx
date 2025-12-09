@@ -31,7 +31,14 @@ const HomeHeroSection = () => {
 					size={'lg'}
 					variant={'secondary'}
 					className='rounded-full w-[250px] sm:w-fit py-6'>
-					MAKE A LOVE OFFERING
+					<div className='flex flex-col text-start gap-0'>
+						<p className='m-0 leading-[100%]'>
+							MAKE A LOVE OFFERING
+						</p>
+						<p className='m-0 leading-[100%] text-xs'>
+							coming soon!
+						</p>
+					</div>
 				</Button>
 			</AnimateOnRender>
 		</HeroWrapper>

@@ -39,6 +39,7 @@ const auxiliaryDepartments: Department[] = [
 			{ name: 'Nancy Tucker' },
 			{ name: 'Kim Cousin' },
 			{ name: 'Virginia Sanders' },
+			{ name: 'Albert Kersey' },
 		],
 	},
 	{

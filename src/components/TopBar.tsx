@@ -100,10 +100,20 @@ const TopBar = () => {
 
 					<Button className='hidden md:flex items-center capitalize'>
 						<BiDonateHeart />
-						<span className='hidden lg:flex'>
-							MAKE A LOVE OFFERING
-						</span>
-						<span className='flex lg:hidden'>Donate</span>
+						<div className='hidden lg:flex flex-col text-start gap-0'>
+							<p className='m-0 leading-[100%]'>
+								MAKE A LOVE OFFERING
+							</p>
+							<p className='m-0 leading-[100%] text-xs'>
+								coming soon!
+							</p>
+						</div>
+						<div className='flex lg:hidden flex-col text-start gap-0'>
+							<p className='m-0 leading-[100%]'>Donate</p>
+							<p className='m-0 leading-[100%] text-xs'>
+								coming soon!
+							</p>
+						</div>
 					</Button>
 
 					{menuOpen ? (
@@ -170,7 +180,15 @@ const TopBar = () => {
 							<Button
 								size={'lg'}
 								className='w-full mt-5 capitalize'>
-								<BiDonateHeart /> MAKE A LOVE OFFERING
+								<BiDonateHeart />
+								<div className='flex flex-col text-start gap-0'>
+									<p className='m-0 leading-[100%]'>
+										MAKE A LOVE OFFERING
+									</p>
+									<p className='m-0 leading-[100%] text-xs'>
+										coming soon!
+									</p>
+								</div>
 							</Button>
 						</ul>
 					</motion.div>

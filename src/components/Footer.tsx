@@ -87,7 +87,11 @@ const FooterSection = () => {
 					</nav>
 				</div>
 				<Button className='mt-5' variant={'ghost'}>
-					<BiDonateHeart /> MAKE A LOVE OFFERING{' '}
+					<BiDonateHeart />
+					<div className='flex flex-col text-start gap-0'>
+						<p className='m-0 leading-[100%]'>MAKE A LOVE OFFERING</p>
+						<p className='m-0 leading-[100%] text-xs'>coming soon!</p>
+					</div>
 				</Button>
 			</div>
 		</SectionWrapper>

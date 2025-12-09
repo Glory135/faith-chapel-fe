@@ -94,17 +94,7 @@ const MinistriesInfoSection = () => {
 							)}>
 							Get Involved
 						</Link>
-						<a
-							href=''
-							className={cn(
-								buttonVariants({
-									size: 'lg',
-									variant: 'outline',
-								}),
-								''
-							)}>
-							Support Our Ministries
-						</a>
+						
 					</div>
 				</div>
 			</div>
