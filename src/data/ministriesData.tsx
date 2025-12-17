@@ -3,7 +3,7 @@ import ypmImg from '../assets/images/new/Young_Peoples_Ministery1.jpg';
 import mediaMinistryImg from '../assets/images/new/media_ministry_02.png';
 import busMinistryImg from '../assets/images/new/bus_ministry.png';
 import infraMinistryImg from '../assets/images/new/Infrastructure_Ministry_05.jpeg';
-import musicMinistryImg from '../assets/images/new/IMG_3056.jpeg';
+import musicMinistryImg from '../assets/images/music_ministry.jpg';
 
 export interface Ministry {
 	title: string;

@@ -35,7 +35,7 @@ export const organizations: Organization[] = [
 			{
 				type: 'website',
 				value: 'https://3rddistrictame.com',
-				link: 'https://https://3rddistrictame.com',
+				link: 'https://3rddistrictame.com/',
 			},
 		],
 	},

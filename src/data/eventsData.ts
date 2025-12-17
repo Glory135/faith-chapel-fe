@@ -82,18 +82,18 @@ export const eventsData: MonthEvents[] = [
 
 export const serviceData = [
     {
-        title: 'Morning Worship',
-        description:
-            'A vibrant Sunday worship service filled with praise, prayer, and a life-changing message to strengthen your walk with God.',
-        day: 'Every Sunday',
-        time: '11:00 AM - 01:00 PM',
-    },
-    {
         title: 'Sunday School',
         description:
             'A practical and engaging teaching session designed to deepen your understanding of the Bible and build a strong spiritual foundation.',
         day: 'Every Sunday',
         time: '09:00 AM - 10:30 AM',
+    },
+    {
+        title: 'Morning Worship',
+        description:
+            'A vibrant Sunday worship service filled with praise, prayer, and a life-changing message to strengthen your walk with God.',
+        day: 'Every Sunday',
+        time: '11:00 AM - 01:00 PM',
     },
     {
         title: 'Bible Study',
