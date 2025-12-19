@@ -1,5 +1,5 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
-import img from '../../assets/images/new/church_family.jpg';
+import img from '../../assets/images/all-together.png';
 import { sectionIds } from '../../data/sectionIds';
 
 const AboutHeroSection = () => {
