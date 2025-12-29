@@ -35,7 +35,10 @@ const BulletinPage = () => {
 				{/* Featured Bulletin */}
 				<section className='py-12 md:py-16'>
 					<div className='container mx-auto px-4'>
-						<FeaturedBulletin {...data[0]} handleOpen={() => handleOpenPost(data[0])} />
+						<FeaturedBulletin
+							{...data[0]}
+							handleOpen={() => handleOpenPost(data[0])}
+						/>
 					</div>
 				</section>
 				<section className='py-12 md:py-16 text-start'>

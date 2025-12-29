@@ -1,12 +1,12 @@
 import HeroWrapper from '../wrappers/HeroWrapper';
-import img from '../../assets/images/all-together.png';
+import img from '../../assets/images/new/church_family.jpg';
 import { sectionIds } from '../../data/sectionIds';
 
-const EventsHeroSection = () => {
+const GalleryHeroSection = () => {
 	return (
 		<HeroWrapper
 			backgroundImg={img}
-			title='Upcoming Events'
+			title='Church Gallery'
 			subtitle='Join us in fellowship and worship throughout the year. All are welcome to participate in these special events and celebrations.'
 			id={sectionIds.eventsHero}
 			className='md:py-32! min-h-0 h-auto'>
@@ -15,4 +15,4 @@ const EventsHeroSection = () => {
 	);
 };
 
-export default EventsHeroSection;
+export default GalleryHeroSection;

@@ -62,6 +62,17 @@ export const navItemsData:
     ],
     Ministries: `/ministries#${sectionIds.ministriesHero}`,
     Bulletins: `/bulletin#${sectionIds.bulletinHero}`,
-    Events: `/events#${sectionIds.eventsHero}`,
+    Events: [
+        {
+            link: `/events#${sectionIds.eventsHero}`,
+            label: 'Events',
+            showOnMobile: true,
+        },
+        {
+            link: `/gallery`,
+            label: 'Gallery',
+            showOnMobile: true,
+        },
+    ],
     "Contact Us": `/contact#${sectionIds.contactHero}`,
 };

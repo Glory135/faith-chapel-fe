@@ -11,6 +11,7 @@ import { EventsPage } from './pages/EventsPAge';
 import { ContactPage } from './pages/ContactPage';
 import BulletinPage from './pages/BulletinPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import GelleryPage from './pages/GalleryPage';
 
 function App() {
 	const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ function App() {
 						<Route path='/events' element={<EventsPage />} />
 						<Route path='/contact' element={<ContactPage />} />
 						<Route path='/bulletin' element={<BulletinPage />} />
+						<Route path='/gallery' element={<GelleryPage />} />
 					</Routes>
 					<FooterSection />
 				</HashRouter>

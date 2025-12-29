@@ -10,21 +10,23 @@ export function ContactPage() {
 	return (
 		<PageWrapper>
 			{/* Hero Header */}
-			<div id={sectionIds.contactHero} className='relative bg-primary py-20 px-6'>
+			<div
+				id={sectionIds.contactHero}
+				className='relative bg-primary py-20 px-6'>
 				<div className='absolute inset-0 opacity-10'>
-				<div
-					className='absolute inset-0'
-					style={{
-						backgroundImage: `repeating-linear-gradient(
+					<div
+						className='absolute inset-0'
+						style={{
+							backgroundImage: `repeating-linear-gradient(
             45deg,
             transparent,
             transparent 10px,
             rgba(245, 241, 235, 0.1) 10px,
             rgba(245, 241, 235, 0.1) 20px
           )`,
-					}}
-				/>
-			</div>
+						}}
+					/>
+				</div>
 				<AnimateOnRender className='max-w-6xl mx-auto text-center'>
 					<h1 className='text-white mb-4'>Contact Us</h1>
 					<div className='w-24 h-1 bg-white mx-auto mb-6'></div>
@@ -37,7 +39,9 @@ export function ContactPage() {
 			</div>
 
 			{/* Main Content */}
-			<div id={sectionIds.contactForm} className='mx-auto px-6 py-16 text-start'>
+			<div
+				id={sectionIds.contactForm}
+				className='mx-auto px-6 py-16 text-start'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
 					{/* Contact Information */}
 					<div>
